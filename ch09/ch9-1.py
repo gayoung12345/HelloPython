@@ -6,3 +6,5 @@ print(LeapYear.is_leap_year(2020)) # True
 print(LeapYear.is_leap_year(2077)) # False
 
 # 2)
+# import test_Leapyear
+
