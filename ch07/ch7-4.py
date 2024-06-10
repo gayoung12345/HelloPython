@@ -14,18 +14,24 @@ class Person:
 
     def talk(self):
         print('주절주절')
-
+    
 class Student(Person): # Person class를 상속받음
     def study(self):
         print('열공')
+
+    # overriding
+    def eat(self):
+        print('쩝쩝')
 
 # Person class로 만든 객체
 lee = Person()
 print(lee.mouth)
 lee.talk()
+# lee.study()
 
 # Student class로 만든 객체
 kim = Student()
 print(kim.mouth) 
 kim.talk()
 kim.study()
+kim.eat()
