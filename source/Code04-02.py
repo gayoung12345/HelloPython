@@ -12,7 +12,7 @@ turtle.pensize(pSize)
 turtle.setup(width=swidth+30, height=sheight+30)
 turtle.screensize(swidth, sheight)
 
-while True :
+while True : # 무한 반복
     r = random.random()
     g = random.random()
     b = random.random()
@@ -25,15 +25,16 @@ while True :
     curX = turtle.xcor()
     curY = turtle.ycor()
 
+    # 거북이의 이동 범위는 화면 안
     if (-swidth / 2 <= curX and curX <= swidth / 2) and (-sheight / 2<= curY and curY <= sheight / 2) :
         pass
-    else :
+    else : # 만약 화면 안을 벗어나면
         turtle.penup()
-        turtle.goto( 0, 0 )
+        turtle.goto( 0, 0 ) # 가운데로 돌아옴
         turtle.pendown()
         
         exitCount += 1
-        if exitCount >= 5 :
-            break
+        if exitCount >= 5 : # 화면밖으로 5번 이상 나가면
+            break # 반복 종료
 
 turtle.done()
