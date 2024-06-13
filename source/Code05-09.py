@@ -11,7 +11,7 @@ turtle.screensize(swidth, sheight)
 turtle.penup()
 turtle.goto(0, -sheight / 2)
 turtle.pendown()
-turtle.speed(10)
+turtle.speed(50)
 
 for radius in range(1, 250) :
     if radius % 6 == 0 :
